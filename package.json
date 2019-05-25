@@ -7,9 +7,20 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "prettify": "prettier --write **/*.js"
     },
-    "keywords": [],
-    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/2277/react-fivem.git"
+    },
+    "keywords": [
+        "fivem",
+        "react"
+    ],
+    "author": "2277",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/2277/react-fivem/issues"
+    },
+    "homepage": "https://github.com/2277/react-fivem#readme",
     "devDependencies": {
         "prettier": "^1.17.1"
     }
