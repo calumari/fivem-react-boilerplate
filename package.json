@@ -1,18 +1,18 @@
 {
-    "name": "react-fivem",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
+  "name": "react-fivem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:clean": "rimraf ./build",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.js --open",
     "lint": "eslint src/**/**.js",
     "lint:fix": "eslint src/**/**.js --fix",
     "lint:staged": "lint-staged",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "prettify": "prettier --write **/*.js"
-    },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettify": "prettier --write **/*.js"
+  },
   "lint-staged": {
     "*.js": [
       "npm run lint:fix",
@@ -24,20 +24,20 @@
     ]
   },
   "pre-commit": "lint:staged",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/2277/react-fivem.git"
-    },
-    "keywords": [
-        "fivem",
-        "react"
-    ],
-    "author": "2277",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/2277/react-fivem/issues"
-    },
-    "homepage": "https://github.com/2277/react-fivem#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2277/react-fivem.git"
+  },
+  "keywords": [
+    "fivem",
+    "react"
+  ],
+  "author": "2277",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2277/react-fivem/issues"
+  },
+  "homepage": "https://github.com/2277/react-fivem#readme",
   "dependencies": {
     "cross-env": "^5.2.0",
     "prop-types": "^15.7.2",
@@ -45,7 +45,7 @@
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0"
   },
-    "devDependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -82,5 +82,5 @@
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1"
-    }
+  }
 }
