@@ -1,3 +1,5 @@
+build
+
 # Logs
 logs
 *.log
@@ -86,3 +88,7 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Cruft
+.DS_Store
+.idea
