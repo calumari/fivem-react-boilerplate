@@ -38,6 +38,13 @@
         "url": "https://github.com/2277/react-fivem/issues"
     },
     "homepage": "https://github.com/2277/react-fivem#readme",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
     "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
