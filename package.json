@@ -39,15 +39,15 @@
   },
   "homepage": "https://github.com/2277/react-fivem#readme",
   "dependencies": {
+    "@rebass/grid": "^6.0.0",
     "cross-env": "^5.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
+    "rebass": "^3.1.0",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^4.2.0",
-    "webpack-fivem-manifest": "git+https://github.com/2277/webpack-fivem-manifest.git"
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -85,6 +85,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1"
+    "webpack-dev-server": "^3.4.1",
+    "webpack-fivem-manifest": "git+https://github.com/2277/webpack-fivem-manifest.git"
   }
 }
