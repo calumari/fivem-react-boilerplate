@@ -39,13 +39,11 @@
   },
   "homepage": "https://github.com/2277/react-fivem#readme",
   "dependencies": {
-    "@rebass/grid": "^6.0.0",
     "cross-env": "^5.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
-    "rebass": "^3.1.0",
     "redux": "^4.0.1",
     "styled-components": "^4.2.0"
   },
