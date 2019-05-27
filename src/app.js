@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 
 import App from 'containers/App';
 
+import WindowListener from 'containers/WindowListener';
+
 import configureStore from './configureStore';
 
 const initialState = {};
@@ -13,7 +15,9 @@ const MOUNT_NODE = document.getElementById('app');
 const render = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <App />
+      <WindowListener>
+        <App />
+      </WindowListener>
     </Provider>,
     MOUNT_NODE,
   );
