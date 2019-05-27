@@ -2,15 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import styled, { createGlobalStyle } from 'styled-components';
-import Pricedown from 'fonts/pricedown.ttf';
+import styled from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Pricedown';
-    src: url(${Pricedown});
-  }
-`;
+import GlobalStyle from '../../globalStyles';
 
 const H1 = styled('h1')`
   font-family: Pricedown;
