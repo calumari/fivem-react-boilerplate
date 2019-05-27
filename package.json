@@ -43,7 +43,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "webpack-fivem-manifest": "git+https://github.com/2277/webpack-fivem-manifest.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

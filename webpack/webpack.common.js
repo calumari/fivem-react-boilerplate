@@ -5,7 +5,7 @@ module.exports = options => ({
   mode: options.mode,
   entry: options.entry,
   output: {
-    path: path.resolve(process.cwd(), 'html'),
+    path: path.resolve(process.cwd(), 'build/html'),
     filename: '[name].js',
   },
   module: {
