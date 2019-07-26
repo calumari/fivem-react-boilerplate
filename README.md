@@ -1,10 +1,26 @@
-# react-fivem
+# fivem-react-boilerplate
 
-## Getting started
+# Quick start
+### 1. Clone repo
+```
+git clone https://github.com/2277/react-fivem.git html
+```
 
-1. Clone this repo using `git clone https://github.com/2277/react-fivem.git`
-2. Move to the appropriate directory: `cd react-fivem`
-3. Run `npm install` to install the dependencies.
-4. Run `npm start` to run locally at `http://localhost:8080`.
-5. Run `npm run build` to make a deployable build.
-6. Copy the `build` directory and include it (e.g. `start build`) in your `server.cfg`.
+### 2. Install dependencies
+```
+cd html
+npm install
+```
+
+### 3. Build
+```
+npm run build
+```
+
+### 4. Copy the contents of the generated manifest to your resource manifest!
+
+# Commands
+### Run locally for development
+```
+npm run start
+```
