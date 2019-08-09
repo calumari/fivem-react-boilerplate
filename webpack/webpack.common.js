@@ -95,6 +95,21 @@ module.exports = options => ({
           },
         },
       },
+      {
+        test: /\.(js)?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'ifdef-loader',
+            options: {
+              DEBUG: process.env.NODE_ENV !== 'production',
+              version: 3,
+              'ifdef-verbose': true, // add this for verbose output
+              'ifdef-triple-slash': false, // add this to use double slash comment instead of default triple slash
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: options.plugins.concat([
