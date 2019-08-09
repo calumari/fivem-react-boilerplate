@@ -3,7 +3,7 @@
 # Quick start
 ### 1. Clone repo
 ```
-git clone https://github.com/2277/react-fivem.git html
+git clone https://github.com/2277/fivem-react-boilerplate.git html
 ```
 
 ### 2. Install dependencies
