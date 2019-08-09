@@ -9,6 +9,7 @@ import App from 'containers/App';
 import WindowListener from 'containers/WindowListener';
 
 import configureStore from './configureStore';
+import CharacterSelect from './containers/CharacterSelect';
 
 const initialState = {};
 const store = configureStore(initialState);
@@ -18,7 +19,10 @@ const render = () => {
   ReactDOM.render(
     <Provider store={store}>
       <WindowListener>
-        <App />
+        <>
+          <App />
+          <CharacterSelect />
+        </>
       </WindowListener>
     </Provider>,
     MOUNT_NODE,
