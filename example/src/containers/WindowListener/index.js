@@ -5,16 +5,30 @@ import PropTypes from 'prop-types';
 class WindowListener extends React.Component {
   componentWillMount() {
     window.addEventListener('message', this.handleEvent);
+    window.addEventListener('DOMContentLoaded', this.handleDomEvent);
   }
 
   componentWillUnmount() {
     window.removeEventListener('message', this.handleEvent);
+    window.removeEventListener('DOMContentLoaded', this.handleDomEvent);
   }
 
   handleEvent = event => {
     const { dispatch } = this.props;
     const { type, data } = event.data;
-    dispatch({ type, payload: { ...data } });
+    if (type !== undefined) {
+      dispatch({ type, payload: { ...data } });
+    }
+  };
+
+  handleDomEvent = event => {
+    if(window.nuiHandoverData !== undefined) {
+      const { dispatch } = this.props;
+      const { type, data } = window.nuiHandoverData;
+      if (type !== undefined) {
+        dispatch({ type, payload: { ...data } });
+      }
+    }
   };
 
   render() {
