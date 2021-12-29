@@ -22,10 +22,12 @@ class WindowListener extends React.Component {
   };
 
   handleDomEvent = event => {
-    const { dispatch } = this.props;
-    const { type, data } = window.nuiHandoverData;
-    if (type !== undefined) {
-      dispatch({ type, payload: { ...data } });
+    if(window.nuiHandoverData !== undefined) {
+      const { dispatch } = this.props;
+      const { type, data } = window.nuiHandoverData;
+      if (type !== undefined) {
+        dispatch({ type, payload: { ...data } });
+      }
     }
   };
 
